@@ -1,39 +1,8 @@
-In [1]: import panda as pd
----------------------------------------------------------------------------
-ImportError                               Traceback (most recent call last)
-<ipython-input-1-cb2e74f3cfa3> in <module>()
-----> 1 import panda as pd
-
-ImportError: No module named panda
-
-In [2]: import panda as pd
----------------------------------------------------------------------------
-ImportError                               Traceback (most recent call last)
-<ipython-input-2-cb2e74f3cfa3> in <module>()
-----> 1 import panda as pd
-
-ImportError: No module named panda
-
-In [3]: import panda as pd
----------------------------------------------------------------------------
-ImportError                               Traceback (most recent call last)
-<ipython-input-3-cb2e74f3cfa3> in <module>()
-----> 1 import panda as pd
-
-ImportError: No module named panda
-
 In [4]: import pandas as pd
 
 In [5]: s1 = pd.Series([1,2,3,4,5], index=list('abcde')
    ...: )
 
-In [6]: s
----------------------------------------------------------------------------
-NameError                                 Traceback (most recent call last)
-<ipython-input-6-f4d5d0c0671b> in <module>()
-----> 1 s
-
-NameError: name 's' is not defined
 
 In [7]: s1
 Out[7]: 
@@ -44,33 +13,13 @@ d    4
 e    5
 dtype: int64
 
-In [8]: data = {'one'::s1*s*1, 'two':s1+1}
-  File "<ipython-input-8-b7abd0c6bb33>", line 1
-    data = {'one'::s1*s*1, 'two':s1+1}
-                  ^
-SyntaxError: invalid syntax
 
-
-In [9]: data = {'one':s1*s*1, 'two':s1+1}
----------------------------------------------------------------------------
-NameError                                 Traceback (most recent call last)
-<ipython-input-9-c4e382e2ce7c> in <module>()
-----> 1 data = {'one':s1*s*1, 'two':s1+1}
-
-NameError: name 's' is not defined
 
 In [10]: data = {'one':s1**s1, 'two':s1+1}
 
 In [11]: type(data)
 Out[11]: dict
 
-In [12]: df
----------------------------------------------------------------------------
-NameError                                 Traceback (most recent call last)
-<ipython-input-12-7ed0097d7e9e> in <module>()
-----> 1 df
-
-NameError: name 'df' is not defined
 
 In [13]: df= pd.DataFrame(data)
 

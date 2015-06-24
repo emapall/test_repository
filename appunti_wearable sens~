@@ -1,0 +1,8 @@
+data aquisition: when i get the data of a second, i get the mean, not all the secdon, or sort of thing
+
+pre processing: trow away calibration, low high pass filter, ecc
+
+features: variance, mean, cross mean, ecc
+-->classificate data!!!
+
+with label i can know what a person is doing

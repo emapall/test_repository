@@ -59,7 +59,7 @@ for i in labels:
 		_medium=np.median(part_data[begin:end, :], axis=0)
 		_norm=np.linalg.norm(part_data[begin:end, :], axis=0)	
 		
-		if(begin==0):
+		if(begin==0 and i=="LAYING"):
 			mean=_avg
 			std=_integ
 			minimun=_min
@@ -80,9 +80,7 @@ for i in labels:
 		begin=end
 		end=end = begin+ (window_pass*frequency)
 
-	plt.figure()
-	plt.plot(mean)
-	plt.show()	
+	
 #MEAN OUTPUT
 out_mean=np.array(["","","",""])	
 
