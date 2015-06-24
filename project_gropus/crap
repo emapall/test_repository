@@ -1,0 +1,7 @@
+print "DEBUG 1 :printing vector, dimension, bergin, end"
+	part_data
+	part_data.shape[0]
+	begin
+	end
+
+!DEBUG FOR THE INPUT
