@@ -29,16 +29,14 @@ y_train
 iris.target.shape
 from sklear import cross_validation
 from sklearn import cross_validation
-x_train, x_test, y_train, y_test = cross_validation.train_test_split(x,y,test_size=0.2)
+x_train,x_testx_train, x_test, y_train, y_test = cross_validation.train_test_split(x,y,test_size=0.2)
 x_train
 y_train
-#at this point, we have split the dataset of the iris with sthe split function, and (an a return) we have (put) some array which are actually the test: x_trai, x_test, ecc. essentialy, the funcion is just like a ""random sort""
-
 from sklearn.tree import DecisionTreeClassifier
-clf=DecisionTreeClassifier() #parentesi!!
+clf=DecisionTreeClassifier()
 clf
-clf_fitted=clf.fit(x_train,y_train) 
-#CLF FITTED IS ACTUALLY A DECISION TREE (OBJ?ALG?CLASS? WHO CARES) who has been set (=fitted) which is, the parameters have been set. now we may test it !
+clf_fitted=clf_fit(x_train,y_train)
+clf_fitted=clf.fit(x_train,y_train)
 clf_fitted
 type(clf_fitted)
 clf_fitted.score(x_test, y_test)
